@@ -1,0 +1,43 @@
+#!/bin/bash
+
+source "${BASH_SOURCE%/*}/include/error"
+
+# ###
+# # Do you have git installed? test (https://git-scm.com/download/mac)
+# #  Binary installer
+# #  Xcode DevTools
+# #  Homebrew
+# #  Manual
+# which git
+# # YES
+# #  What is the latest stable version of git?
+# #TBD
+# #  Is the version installed older than the latest version?
+# #TBD
+# #  Proceed?
+# # YES
+# # Use git to install git
+# git clone git://github.com/gitster/git.git
+# cd git
+# git fetch
+# git tag -v v1.7.10.4 # verify latest stable tag
+# git checkout v1.7.10.4 # checkout latest stable tag
+# # OR
+# # Download the Git files
+# curl -O http://git-core.googlecode.com/files/git-1.7.10.4.tar.gz # download the latest stable from [Google code](http://code.google.com/p/git-core/downloads/list)
+# tar -xzvf git-1.7.10.4.tar.gz
+# cd git-1.7.10.4
+# # Configure & Build
+# make configure # this is optional, requires GNU Autoconf be installed
+# ./configure --prefix=/usr/local # you can only run this if you've run the command above
+# make prefix=/usr/local
+# sudo make prefix=/usr/local install
+# # Build the docs
+# cd .. # the directory where you cloned the git repo (not into the git repo directory, but it's parent)
+# git clone https://github.com/gitster/git-manpages.git
+# cd git
+# make prefix=/usr/local
+# sudo make quick-install-man
+# ###
+
+echo "Hello world."
